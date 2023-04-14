@@ -1,25 +1,18 @@
 import './App.css';
-import extractPDF from './data/extract-daylight-table';
+import { DaylightTableService } from './data/DaylightTableService';
+import { DaylightTableInputComponent } from './presentation/DaylightTableInputComponent';
 
 function App() {
+  // Dependencies
+  const daylightService = new DaylightTableService();
 
-  extractPDF();
-
-
+  // Render the app
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Daylight Table Calculator!</h1>
+        <p>This web-app is a handy way to determine Morning Civil Twilight and Evening Civil Twilight for any given region within NZ.</p>
+        <DaylightTableInputComponent daylightService={daylightService} />
       </header>
     </div>
   );

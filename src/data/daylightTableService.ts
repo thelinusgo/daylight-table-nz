@@ -20,13 +20,13 @@ export interface IDaylightTableService {
 }
 
 export class DaylightTableService implements IDaylightTableService {
-    retrieveEntireDaylightTable(): Promise<Zone> {
+    async retrieveEntireDaylightTable(): Promise<Zone> {
         throw new Error("Method not implemented.")
     }
-    retrieveDaylightRangeGivenDate(date: string): Promise<DaylightRange> {
+    async retrieveDaylightRangeGivenDate(date: string): Promise<DaylightRange> {
         throw new Error("Method not implemented.")
     }
-    retrieveAllDaylightRangesGivenZone(zone: Zone): Promise<DaylightRange[]> {
+    async retrieveAllDaylightRangesGivenZone(zone: Zone): Promise<DaylightRange[]> {
         throw new Error("Method not implemented.")
     }
 
