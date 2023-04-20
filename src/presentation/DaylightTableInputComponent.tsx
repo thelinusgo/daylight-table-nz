@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import { IDaylightTableService } from '../data/DaylightTableService';
+import '../App.css';
+import { IDaylightTableService } from '../data/daylightTableService';
 
 interface DayLightTableInputProps {
     daylightService: IDaylightTableService;

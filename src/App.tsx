@@ -1,5 +1,5 @@
 import './App.css';
-import { DaylightTableService } from './data/DaylightTableService';
+import { DaylightTableService } from './data/daylightTableService';
 import { DaylightTableInputComponent } from './presentation/DaylightTableInputComponent';
 
 function App() {

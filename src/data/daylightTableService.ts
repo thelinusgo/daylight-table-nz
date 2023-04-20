@@ -5,29 +5,23 @@ export interface DaylightRange {
     EveningCivilTwilight: string
 }
 
-export interface Zone {
+export interface DaylightRangeZones {
     DaylightRanges: DaylightRange[]
-}
-
-export interface DaylightTable {
-    Zones: Zone[]
 }
 
 export interface IDaylightTableService {
     retrieveDaylightRangeGivenDate(date: string): Promise<DaylightRange>
-    retrieveAllDaylightRangesGivenZone(zone: Zone): Promise<DaylightRange[]>
-    retrieveEntireDaylightTable(): Promise<Zone>
+    retrieveEntireDaylightTable(): Promise<DaylightRangeZones>
 }
 
 export class DaylightTableService implements IDaylightTableService {
-    async retrieveEntireDaylightTable(): Promise<Zone> {
-        throw new Error("Method not implemented.")
+    async retrieveEntireDaylightTable(): Promise<DaylightRangeZones> {
+        const response = await fetch('daylight_tables.json');
+        const jsonData = await response.text();
+        const parsedData: DaylightRangeZones = JSON.parse(jsonData);
+        return parsedData;
     }
     async retrieveDaylightRangeGivenDate(date: string): Promise<DaylightRange> {
         throw new Error("Method not implemented.")
     }
-    async retrieveAllDaylightRangesGivenZone(zone: Zone): Promise<DaylightRange[]> {
-        throw new Error("Method not implemented.")
-    }
-
 }
