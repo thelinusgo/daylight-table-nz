@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "watch": "cra-build-watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cra-build-watch": "^3.4.0"
   }
 }

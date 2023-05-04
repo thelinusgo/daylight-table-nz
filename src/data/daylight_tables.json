@@ -1,6 +1,7 @@
-{
-    "Zones": {
-        "Zone4": [
+[
+    {
+        "Zone": "4",
+        "DaylightRanges": [
             {
                 "Date": "01-07",
                 "MCT": "1627",
@@ -237,5 +238,21 @@
                 "ECT": "0826"
             }
         ]
+    },
+    {
+        "Zone": "5",
+        "DaylightRanges": []
+    },
+    {
+        "Zone": "6",
+        "DaylightRanges": []
+    },
+    {
+        "Zone": "7",
+        "DaylightRanges": []
+    },
+    {
+        "Zone": "8",
+        "DaylightRanges": []
     }
-}
+]

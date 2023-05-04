@@ -7,14 +7,13 @@ interface DayLightTableInputProps {
 }
 
 export const DaylightTableInputComponent: React.FC<DayLightTableInputProps> = ({ daylightService }) => {
-    const handleTableLookup = () => {
+    const handleEntireTableLookup = () => {
         const results = daylightService.retrieveEntireDaylightTable();
-        console.log({results});
     };
 
     return (
     <div>
-        <button onClick={handleTableLookup}>View all items in daylight table</button>
+        <button onClick={handleEntireTableLookup}>View all daylight ranges in the daylight table!</button>
     </div>
     );
 };
