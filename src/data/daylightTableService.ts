@@ -13,6 +13,8 @@ export interface DaylightRangeZones {
 }
 
 export interface IDaylightTableService {
+
+    // 
     retrieveDaylightRangeGivenDate(date: string): Promise<DaylightRange>
     retrieveEntireDaylightTable(): Promise<DaylightRangeZones>
 }

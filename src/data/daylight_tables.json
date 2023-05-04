@@ -1,4 +1,7 @@
 [
+    {"Zone": "1", "DaylightRanges": []},
+    {"Zone": "2", "DaylightRanges": []},
+    {"Zone": "3", "DaylightRanges": []},
     {
         "Zone": "4",
         "DaylightRanges": [
